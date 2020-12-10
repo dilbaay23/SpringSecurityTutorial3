@@ -1,0 +1,180 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Moon Security Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+    <meta id="Reverso_extension___elForCheckedInstallExtension" name="Reverso extension" content="2.2.202">
+    <style>.dpmaxz_hidden {
+        display: none
+    }
+
+    #dpmaxz_fbi_root {
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 2147483646;
+        margin: 0;
+        padding: 0;
+        overflow: visible
+    }
+
+    #dpmaxz_fbi_root *, #dpmaxz_fbi_root :after, #dpmaxz_fbi_root :before {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        width: auto;
+        overflow: visible
+    }
+
+    #dpmaxz_fbm_gui {
+        position: static;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        margin: 0;
+        padding: 0;
+        overflow: visible
+    }
+
+    #dpmaxz_fbm_gui * {
+        color: unset;
+        background-color: unset;
+        font: unset;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        overflow: visible;
+        box-sizing: border-box;
+        width: auto
+    }
+
+    #dpmaxz_fbm_gui :after, #dpmaxz_fbm_gui :before {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+        width: auto;
+        overflow: visible
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus {
+        position: absolute;
+        z-index: 2147483646;
+        transition: left 267ms cubic-bezier(.4, 0, .2, 1) 0ms, top 267ms cubic-bezier(.4, 0, .2, 1), opacity 267ms cubic-bezier(.4, 0, .2, 1)
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus ul {
+        padding: 6px 0;
+        list-style: none;
+        white-space: nowrap;
+        border: 1px solid #a0a0a0;
+        color: #000;
+        background-image: linear-gradient(180deg, #fafcff 0, #f0f6ff 70%, #fafcff);
+        box-shadow: 2px 2px 5px -2px rgba(96, 95, 112, .5);
+        font: normal 14px/18px Segoe UI, Verdana, Arial
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus ul li {
+        text-decoration: none;
+        list-style: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        overflow: visible
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus ul li:hover {
+        color: #fff;
+        background-color: #495057
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus #dpmaxz_fbm_gui .dpmaxz_fbm_menus .dpmaxz_fbm_rowtext {
+        display: inline-block;
+        padding: .2em 1em
+    }
+
+    #dpmaxz_fbm_gui .dpmaxz_fbm_menus .dpmaxz_fbm_rowtext {
+        display: inline-block;
+        padding: .2em 1em;
+        font: normal 14px/18px Segoe UI, Verdana, Arial
+    }
+
+    .dpmaxz_highlight {
+        border-image: 5 9 8 6 repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAm9JREFUeNpkU01rU0EUPe+jr2nTmpjQYmiDtbTUhVWxIkhxoSAFUduFK9GNi9KVFPwVbgSzdCciCIp0Iy66sRtBEEqq4kJSMMGk0q80ecn7nvHOvHltwYEzM2/mzrnnnpmnIf8Esmk6dfwqTaZpzOCwcQ0cTSDYwG7pq1ggsGRTdKb6mCLM37+denDtIjLZdGSCRRTCwT0P2412sLZhNd9/efwGfnUF7ZUqxQeESBCZkkwz5t+VMssLN4wC9xw66NJ2KElYxwbf28HilfbpV1O53OLLU7108AWhQ3AFmahh7PI5897Cdb3AfRe2U0DXHUXXL8bgE2j3nqfQAA9nasXx4Z45WJNC+QmCIDRM8mL80lmkudcFd2zASUOfWIJhGLJO27ahfX9GyiKJmWIrvVkdmob/a0+VJJXoBpjGfY9ISGEYJASagiwLnMnR0BgZ7edo9SShT/hq0oYmfWFxJmW4VPB/42oIB6gfJKTicoQKx0XUaABCTf9IQiBPBOSFReqEJ3ES0cI+pcKKlSDaqtS4g3aLAn2E6EJbf3qY22Isvil1Wz//ph2Eux31Vlh8xbulH6vl5Y+r66nRm5Ot4cHuJ9piRxWIMlnsx9uNkXp5s1ZH2BCmekKSiDCl7Ojgw93nY9aj2eyt2TP7mZQR6kc2cHR8PVqr5A9ef25W4JZ/02pT2JYQJTcgDMpi8M4c9IELpD1D5qVkEml8wBDU9uF+q1PcDuEPQZBtCcKERCjql0TAECGv5n1qjyvpjlIhiLbV3NGUaCG/RykaUEjcN479dJ4iso89ez8hSRQZisxSo6EScIVIvVL/+A/4T4ABANshJgZBraeOAAAAAElFTkSuQmCC);
+        border-style: solid
+    }
+
+    @keyframes a {
+        0% {
+            opacity: 0;
+            transform: scale3d(.1, .1, .1) translate3d(0, -10px, 0);
+            animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+        }
+        60% {
+            opacity: 1;
+            transform: scale3d(.475, .475, .475) translate3d(0, 20px, 0);
+            animation-timing-function: cubic-bezier(.175, .885, .32, 1)
+        }
+    }
+
+    .maxz-menu-zoomindown {
+        animation: a 267ms
+    }
+
+    @keyframes b {
+        0% {
+            opacity: 1
+        }
+        50% {
+            opacity: 0;
+            transform: scale3d(.3, .3, .3)
+        }
+        to {
+            opacity: 0
+        }
+    }
+
+    .maxz-menu-zoomout {
+        animation-duration: 267ms;
+        animation-fill-mode: forwards;
+        animation-name: b
+    }
+
+    /
+    /
+    <style id="svg-animations-hp"> g#dpmaxz-logo #logo {
+                                     transform-origin: 256px 316.64px
+                                 }
+
+    g#dpmaxz-logo #feedback > #iOk {
+        transform-origin: 262.87px 222.46px;
+        transform: scale(0)
+    }
+
+    g#dpmaxz-logo #feedback > #iNo {
+        transform-origin: 263.46px 229.67px;
+        transform: scale(0)
+    }</style>
+    <style>
+        body {
+            background-color: #C44B94;
+            color: #f0f6ff;
+        }
+    </style>
+</head>
+<body>
+<h1>Courses</h1>
+<p>Spring Boot Security</p>
+<div class="container">
+    <form class="form-signin" method="get" action="/logout">
+        <button class="btn  btn-primary btn-block" type="submit">Logout</button>
+    </form>
+</div>
+</body>
+</html>
+
